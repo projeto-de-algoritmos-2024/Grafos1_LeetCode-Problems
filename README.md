@@ -12,6 +12,14 @@
 ## Sobre 
 Este projeto consiste na realização de exercícios da plataforma de juiz eletrônico LeetCode. Serão desenvolvidos problemas de média e alta complexidade, com ênfase nos conteúdos vistos no módulo de Grafos 1.
 
+## Questões 
+
+|Questão | Nível |
+| -- | -- |
+| [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)  |  Médio |
+| [1761. Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/description/)  |  Difícil |
+|   |  Difícil |
+
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 

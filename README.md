@@ -21,17 +21,26 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 |   |  Difícil |
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+### Problema 547
+
+![Questão 547 aceita](problema-547.png)
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python<br>
+
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
+- Acesse o [LeetCode](https://leetcode.com/).
+- Procure pelo problema ou busque pelo ID da questão que será testada.
+- Cole o código na área de solução fornecida.
+- Clique em "Run Code" para testar com casos de exemplo ou "Submit" para enviar a solução.
+
+
+## Apresentação
+
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 

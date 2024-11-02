@@ -10,6 +10,9 @@ class Solution:
         graus =  n * [0]
         
         for u, v in edges:
+            # ajusta o índice para 0
+            u -= 1  
+            v -= 1 
             matriz[u][v] = True
             matriz[v][u] = True
             graus[u] += 1

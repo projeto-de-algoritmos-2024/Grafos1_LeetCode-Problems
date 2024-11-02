@@ -24,7 +24,7 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 
 ### Problema 547
 
-![Questão 547 aceita](problema-547.png)
+![Questão 547 aceita](./imagens/problema-547.png)
 
 
 ## Instalação 

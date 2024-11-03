@@ -54,7 +54,7 @@ def largestPathValue(colors: str, edges: list[list[int]]) -> int:
                         colors_cont[graph[v]['cor']]+=1
                         enqueue(queue,v)
          
-    print(max(colors_cont, key=colors_cont.get))
+    print(colors_cont[max(colors_cont, key=colors_cont.get)])
     
 
 largestPathValue("abaca",[[0,1],[0,2],[2,3],[3,4]])        

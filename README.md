@@ -18,7 +18,7 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 | -- | -- |
 | [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)  |  Médio |
 | [1761. Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/description/)  |  Difícil |
-|   |  Difícil |
+|  [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) |  Difícil |
 
 ## Screenshots
 
@@ -29,6 +29,8 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 ### Problema 1761
 
 ![Questão 1761 aceita](./imagens/problema-1761.png)
+
+## Problema 1857
 
 
 ## Instalação 

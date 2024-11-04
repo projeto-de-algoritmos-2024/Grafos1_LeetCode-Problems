@@ -11,6 +11,8 @@ def largestPathValue(colors: str, edges: list[list[int]]) -> int:
     graph = {}
     
     for item in edges:
+        if item[0] == item[1]:
+            return -1
         if item[0] not in graph:
             
             graph[item[0]] = {

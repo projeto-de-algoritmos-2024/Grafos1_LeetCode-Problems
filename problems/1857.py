@@ -39,7 +39,7 @@ def largestPathValue(colors: str, edges: list[list[int]]) -> int:
                     caminho_cor[vizinho][cor_vizinho] += 1
                     maximo_caminho = max(maximo_caminho, caminho_cor[vizinho][cor_vizinho])
 
-    return print(maximo_caminho)
+    return maximo_caminho
         
     
 

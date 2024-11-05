@@ -1,6 +1,9 @@
 from collections import defaultdict
 def largestPathValue(colors: str, edges: list[list[int]]) -> int:
     
+    if len(list) == 0:
+        return 1
+    
     num_nos = len(colors)
     nos_sem_chegada = set()
     for i in range(num_nos):

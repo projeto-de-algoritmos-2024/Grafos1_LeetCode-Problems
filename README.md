@@ -32,6 +32,7 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 
 ## Problema 1857
 
+![Questão 1857 aceita](./imagens/problema-1857.png)
 
 ## Instalação 
 **Linguagem**: Python<br>

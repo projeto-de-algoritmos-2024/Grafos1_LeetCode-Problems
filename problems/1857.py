@@ -1,62 +1,46 @@
-import pprint
+from collections import defaultdict
 def largestPathValue(colors: str, edges: list[list[int]]) -> int:
     
-    colors_cont = {}
-    
-    for i in colors:
-        if i not in colors_cont:
-            colors_cont[i] = 0
+    num_nos = len(colors)
+    nos_sem_chegada = set()
+    for i in range(num_nos):
+        nos_sem_chegada.add(i)
         
+    grafo = defaultdict(set)
+    grau_entrada = defaultdict(int)
     
-    graph = {}
+    for origem, destino in edges:
+        grafo[origem].add(destino)
+        grau_entrada[destino] += 1
+        nos_sem_chegada -= {destino}
     
-    for item in edges:
-        if item[0] == item[1]:
-            return -1
-        if item[0] not in graph:
+    maximo_caminho = -1
+    caminho_cor = defaultdict(dict)
+
+    for raiz in nos_sem_chegada:
+        grau_entrada[raiz] = 0
+        caminho_cor[raiz][colors[raiz]] = 1
+        fila = [raiz]
+        
+        while fila:
+            atual = fila.pop(0)
             
-            graph[item[0]] = {
-                'vizinhos': [],
-                'visitado': False,
-                'cor': colors[item[0]]
-            }
-        if item[1] not in graph:
-            
-            graph[item[1]] = {
-                'vizinhos': [],
-                'visitado': False,
-                'cor': colors[item[1]]
-            }
+            for vizinho in grafo[atual]:
+                grau_entrada[vizinho] -= 1
+                if grau_entrada[vizinho] == -1: 
+                    return -1
+                for cor in caminho_cor[atual]:
+                    caminho_cor[vizinho].setdefault(cor, caminho_cor[atual][cor])
+                    caminho_cor[vizinho][cor] = max(caminho_cor[vizinho][cor], caminho_cor[atual][cor])
+                if grau_entrada[vizinho] == 0:
+                    fila.append(vizinho)
+                    cor_vizinho = colors[vizinho]
+                    caminho_cor[vizinho].setdefault(cor_vizinho, 0)
+                    caminho_cor[vizinho][cor_vizinho] += 1
+                    maximo_caminho = max(maximo_caminho, caminho_cor[vizinho][cor_vizinho])
+
+    return print(maximo_caminho)
         
-        graph[item[0]]['vizinhos'].append(item[1])
-    
-    
-    
-    def enqueue(queue:list ,node: int):
-        queue.append(node)
-        
-    def dequeue(queue:list):
-        return queue.pop(0)
-        
-    queue = []
-    
-    for vertex in graph:
-        if graph[vertex]['visitado'] == False:
-        
-            enqueue(queue,vertex)
-            graph[vertex]['visitado'] = True
-            colors_cont[graph[vertex]['cor']]+=1
-            
-            while len(queue) > 0:
-                u = dequeue(queue)
-                
-                for v in graph[u]['vizinhos']: 
-                    if graph[v]['visitado'] == False:
-                        graph[v]['visitado'] = True
-                        colors_cont[graph[v]['cor']]+=1
-                        enqueue(queue,v)
-         
-    return colors_cont[max(colors_cont, key=colors_cont.get)]
     
 
-largestPathValue("abaca",[[0,1],[0,2],[2,3],[3,4]])        
+largestPathValue("hhqhuqhqff",[[0,1],[0,2],[2,3],[3,4],[3,5],[5,6],[2,7],[6,7],[7,8],[3,8],[5,8],[8,9],[3,9],[6,9]])        

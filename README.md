@@ -2,6 +2,7 @@
 
 **Número da Lista**: 1<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
+## [Para assistir a apresentação desta entrega, clique aqui!](https://youtu.be/WJKkQnLgCeY?si=rdghKAZTivMaXdlC)
 
 ## Alunos
 |Matrícula | Aluno |
@@ -46,9 +47,6 @@ Este projeto consiste na realização de exercícios da plataforma de juiz eletr
 - Clique em "Run Code" para testar com casos de exemplo ou "Submit" para enviar a solução.
 
 
-## Apresentação
-
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
